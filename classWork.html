@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a[href*="http://www.google"]{
+        color: rgb(0, 166, 255);
+        }
+        a[href$="http://www.amazon.com"]{
+            color: rgb(255, 196, 0);
+        }
+        a[href*="http://www.netflix.com"]{
+            color: black;
+        }
+        a[href*="http://www.w3schools.com"]{
+            color: lightblue;
+        }
+
+        body{
+            background-color: black;
+            text-shadow:1px 1px 5px white;
+        }
+        button:hover {
+            background-color: red;
+            transition: 1s;
+            width: 80px;
+            height: 40px;
+            border-radius: 10%;
+        }
+        h1:hover {
+            color: rgb(5, 186, 5);
+        }
+        .pri:hover{
+            background-color: rgb(0, 255, 204);
+            width: 80px;
+            height: 20px;
+            padding:10px 10px;
+        }
+        .blue {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+        display: flex;
+
+        }
+        .hover:hover{
+            background-color: lightgreen;
+            transition: 0.3s;
+            border: 2px solid;
+            
+        }
+    </style>
+</head>
+<body>
+    <button>Hover me!</button>
+    <h1>Hover me!</h1>
+    <p class="pri">Hover me!</p>
+    <div class="blue hover">Hover me!</div>
+
+    <a href="http://www.google.com">Google</a>
+    <a href="http://www.amazon.com">Amazon</a>
+    <a href="http://www.netflix.com">Netflix</a>
+    <a href="http://www.w3schools.com">w3schools</a>
+
+    <h2>Deep Dark Secrets</h2>
+    <p>You're getting the hang of this!</p>
+</body>

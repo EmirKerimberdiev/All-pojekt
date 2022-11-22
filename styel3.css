@@ -1,0 +1,47 @@
+.textCenter {
+    text-align: center;
+  }
+  .marginZeroAuto {
+    margin: 0 auto;
+  }
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .positionRelative {
+    position: relative;
+  }
+  .positionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box{
+    width: 50px;
+    height: 50px;
+    border:solid 3px;
+}
+.Big{
+   
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.Red{
+    background-color: red;
+    position: absolute;
+    
+}
+.perpul{
+    background-color: purple;
+    position: absolute;
+    right: 500px;
+    bottom: 520px;
+}
