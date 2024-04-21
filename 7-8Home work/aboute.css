@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway );
+@import url(https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap);
+
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
+  font-family: 'IM Fell English SC', serif;
+  margin: 0px;
+  height: 5000px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(93, 93, 93), rgb(12, 12, 12));
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteiner {
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Page {
+  font-size: 30px;
+}
+
+* {
+
+  box-sizing: border-box;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.781);
+  box-shadow: 0 0 20px rgb(225, 255, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu>li {
+  margin: 0 2rem;
+  overflow: hidden;
+  list-style-type: none;
+
+}
+
+.menu li a {
+  color: white;
+  font-size: 30px;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 800px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .first-line {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-info {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .project-info h2 {
+    font-size: calc(70px + (60 + 16 * 0.7) * (100vw / 320) / 1280);
+  }
+
+  .project-info h3 {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+
+  .project-info p {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+}
+
+/* конец навbара */
+.first-line {
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+
+.project-info {
+  font-size: 35px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.project-info h2 {
+  width: 100%;
+  color: rgb(136, 20, 20);
+  font-size: calc(60px + 50 * (100vw / 1280));
+}
+.project-info p{
+  margin-bottom: 20px;
+}
+
+.project-info h3 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.img {
+  max-width: 550px;
+}
+.like{
+  color: white;
+  font-size: 85px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: -ms-inline-grid;
+  margin-bottom: 100px;
+}
+.like span{
+  color:  rgb(136, 20, 20);
+}
+/* Second */
+.second-line{
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  
+  display: inline-block;
+}
+
+.img2{
+  text-align: center;
+}
+.img2-0{
+  width: 100%;
+  height: auto;
+}
+/* Thert-line */
+.thert-line{
+  display: inline-block;
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.img3{
+  text-align: center;
+}
+.img3-0{
+  width: 100%;
+  height: auto;
+}
+
